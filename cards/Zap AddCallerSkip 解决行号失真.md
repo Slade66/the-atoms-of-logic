@@ -1,9 +1,9 @@
 ---
-title: AddCallerSkip 解决日志行号失真问题
 description: 当 Logger 被二次封装后 Caller 行号指向包装器而非业务代码，用 AddCallerSkip(1) 跳过中间栈帧修正。
 date: 2026-02-27T15:51:38+08:00
-tags: [Go, Zap]
 ---
+
+# Zap AddCallerSkip 解决行号失真
 
 ### 🧠 痛点：包装器导致 Caller 行号失真
 

@@ -1,9 +1,9 @@
 ---
-title: 业务中禁用 Fatal 系列操作的原因
 description: 详细分析 os.Exit(1) 导致的 defer 失效灾难，以及避免写入缓冲区日志丢失的最佳退出实践。
 date: 2026-02-27
-tags: [Go, Zap]
 ---
+
+# Zap 没有 Fatalf 的原因
 
 ## 严禁在业务层使用 Fatal 系列
 

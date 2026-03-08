@@ -1,9 +1,9 @@
 ---
-title: Antigravity Workflows 工作流机制
 description: 用 Markdown 文件定义可重复执行的任务序列，并通过斜杠命令一键调用。
 date: 2026-03-02T17:39:28+08:00
-tags: ["Antigravity"]
 ---
+
+# Google Antigravity Workflows
 
 ### 🧠 Workflow 是什么
 

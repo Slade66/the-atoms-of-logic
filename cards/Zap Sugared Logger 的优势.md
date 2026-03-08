@@ -1,9 +1,9 @@
 ---
-title: 为什么要使用 SugaredLogger？
 description: 对比 zap 原生 Logger 带来的类型声明痛点，解析 SugaredLogger 在绝大部分业务代码中带来的开发效率与极佳体验。
 date: 2026-02-27T10:37:42+08:00
-tags: [Go, Zap]
 ---
+
+# Zap Sugared Logger 的优势
 
 ### 🧠 原生 Logger 的痛点：强类型的冗长声明
 

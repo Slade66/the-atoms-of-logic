@@ -1,9 +1,9 @@
 ---
-title: Zap 的缓冲落盘与 Sync() 机制
 description: 解析 Zap 异步缓冲写入的底层原理，以及 Development 同步直写与 Production 异步缓冲的关键差异。
 date: 2026-02-27T15:51:38+08:00
-tags: [Go, Zap]
 ---
+
+# Zap 缓冲落盘与 Sync 机制
 
 ### 🧠 底层原理：异步缓冲写入
 

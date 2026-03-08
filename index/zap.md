@@ -1,9 +1,9 @@
 ---
-title: Zap 知识索引
 description: Uber 高性能结构化日志库 Zap 的全部知识卡片索引，按主题分类串联。
 date: 2026-02-27T16:24:19+08:00
-tags: [Go, Zap]
 ---
+
+# Zap 知识索引
 
 ## 入门基础
 

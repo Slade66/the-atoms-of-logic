@@ -1,9 +1,9 @@
 ---
-title: Zap 配置项：WithCaller 与 AddStacktrace
 description: 控制日志是否附加调用者文件行号，以及从哪个级别开始自动打印调用栈。
 date: 2026-02-27T15:51:38+08:00
-tags: [Go, Zap]
 ---
+
+# Zap WithCaller 与 AddStacktrace 配置
 
 ### 🧠 `zap.WithCaller(true)` —— 调用者信息
 

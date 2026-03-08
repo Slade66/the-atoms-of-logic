@@ -1,8 +1,9 @@
 ---
 description: 介绍 Agent Skills 的定义、优势、与自定义指令的区别、创建流程、文件格式与斜杠命令使用方式。
 date: 2026-03-07T10:40:08+08:00
-tags: ["Visual Studio Code", "skills"]
 ---
+
+# VS Code Agent Skills
 
 # Visual Studio Code Agent Skills
 

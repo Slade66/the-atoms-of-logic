@@ -1,9 +1,9 @@
 ---
-title: 使用 logger.With() 绑定日志上下文
 description: 解决每行日志重复添加公共字段的痛点，通过衍生 Logger 自动携带上下文信息。
 date: 2026-02-27T15:51:38+08:00
-tags: [Go, Zap]
 ---
+
+# Zap With 日志上下文绑定
 
 ### 🧠 痛点：公共字段重复书写
 

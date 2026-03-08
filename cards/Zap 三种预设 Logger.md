@@ -1,9 +1,9 @@
 ---
-title: Zap 三种开箱即用的 Logger 预设
 description: 对比 Example / Development / Production 三种预设的适用场景、编码格式与配置差异。
 date: 2026-02-27T15:51:38+08:00
-tags: [Go, Zap]
 ---
+
+# Zap 三种预设 Logger
 
 ### 🧠 `zap.NewExample()` —— 极简模式
 

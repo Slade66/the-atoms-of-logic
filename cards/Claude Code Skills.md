@@ -1,9 +1,9 @@
 ---
-title: "Claude Code Skills：让 Agent 在正确时刻拥有正确的知识"
 description: "Skills 是一种语义触发的能力包，解决通用模型的认知稀释问题，把经验封装为可复用的工程资产"
 date: 2026-02-28T15:13:36+08:00
-tags: ["Claude Code", "agent"]
 ---
+
+# Claude Code Skills
 
 ### 🧠 Skills 要解决的根本问题
 

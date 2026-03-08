@@ -1,9 +1,9 @@
 ---
-title: Antigravity rules：全局规则/工作区规则与 @ 文件引用详解
 description: 解析 Agent 规则的两大类型（全局规则与工作区规则）的适用范围与存放路径，以及 @ 文件路径引用机制的寻路策略，附典型配置示例与操作指南。
 date: 2026-03-02T15:26:18+08:00
-tags: ['Google Antigravity']
 ---
+
+# Google Antigravity Rules
 
 ### 🧠 什么是规则（Rules）
 

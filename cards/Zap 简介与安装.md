@@ -1,9 +1,9 @@
 ---
-title: Zap 简介与安装
 description: Uber 开源的高性能结构化日志库，解决标准库 log 性能不足与缺乏分级支持的问题。
 date: 2026-02-27T15:51:38+08:00
-tags: [Go, Zap]
 ---
+
+# Zap 简介与安装
 
 ### 🧠 Zap 是什么
 

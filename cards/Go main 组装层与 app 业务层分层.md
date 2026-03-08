@@ -1,9 +1,9 @@
 ---
-title: 架构分层：main 组装层与 App 业务层
 description: main.go 只负责组装依赖并注入 App，业务逻辑全部下沉到 internal/ 的 App 结构体中。
 date: 2026-02-27T16:05:35+08:00
-tags: [Go, 架构]
 ---
+
+# Go main 组装层与 app 业务层分层
 
 ### 🧠 痛点：`main.go` 沦为上帝函数
 

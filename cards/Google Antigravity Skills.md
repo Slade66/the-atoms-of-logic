@@ -1,9 +1,9 @@
 ---
-title: Google Antigravity Agent Skills 机制
 description: Skills 是扩展 Agent 能力的可复用知识包，理解其定义、工作原理、创建方式与最佳实践。
 date: 2026-02-28T16:48:50+08:00
-tags: ["google antigravity", "agent", "skills"]
 ---
+
+# Google Antigravity Skills
 
 ### 🧠 什么是 Skill
 

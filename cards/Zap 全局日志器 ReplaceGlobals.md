@@ -1,9 +1,9 @@
 ---
-title: 使用 ReplaceGlobals 设置全局日志器
 description: 解决 Logger 层层传参的污染问题，通过全局单例实现任意位置直接调用。
 date: 2026-02-27T15:51:38+08:00
-tags: [Go, Zap]
 ---
+
+# Zap 全局日志器 ReplaceGlobals
 
 ### 🧠 痛点：Logger 层层传参污染
 
