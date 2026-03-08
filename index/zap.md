@@ -7,26 +7,26 @@ tags: [Go, Zap]
 
 ## 入门基础
 
-- [Zap 简介与安装](../cards/zap-简介与安装.md)
-- [三种开箱即用的 Logger 预设](../cards/zap-三种预设logger.md)
+- [Zap 简介与安装](<../cards/Zap 简介与安装.md>)
+- [三种开箱即用的 Logger 预设](<../cards/Zap 三种预设 Logger.md>)
 
 ## 核心 API
 
-- [日志级别速查与使用规范](../cards/zap-日志级别速查.md)
-- [结构化字段 zap.Field 构造](../cards/zap-结构化字段field构造.md)
-- [为什么要使用 SugaredLogger](../cards/zap-sugared-logger的优势.md)
+- [日志级别速查与使用规范](<../cards/Zap 日志级别速查.md>)
+- [结构化字段 zap.Field 构造](<../cards/Zap 结构化字段 Field 构造.md>)
+- [为什么要使用 SugaredLogger](<../cards/Zap Sugared Logger 的优势.md>)
 
 ## 高级用法
 
-- [logger.With() 日志上下文绑定](../cards/zap-with日志上下文绑定.md)
-- [ReplaceGlobals 设置全局日志器](../cards/zap-全局日志器replaceglobals.md)
+- [logger.With() 日志上下文绑定](<../cards/Zap With 日志上下文绑定.md>)
+- [ReplaceGlobals 设置全局日志器](<../cards/Zap 全局日志器 ReplaceGlobals.md>)
 
 ## 底层机制
 
-- [缓冲落盘与 Sync() 机制](../cards/zap-缓冲落盘与sync机制.md)
-- [为什么 Zap 没有 Fatalf](../cards/zap-没有fatalf的原因.md)
+- [缓冲落盘与 Sync() 机制](<../cards/Zap 缓冲落盘与 Sync 机制.md>)
+- [为什么 Zap 没有 Fatalf](<../cards/Zap 没有 Fatalf 的原因.md>)
 
 ## 配置与调试
 
-- [WithCaller 与 AddStacktrace 配置](../cards/zap-withcaller与addstacktrace配置.md)
-- [AddCallerSkip 解决行号失真](../cards/zap-addcallerskip解决行号失真.md)
+- [WithCaller 与 AddStacktrace 配置](<../cards/Zap WithCaller 与 AddStacktrace 配置.md>)
+- [AddCallerSkip 解决行号失真](<../cards/Zap AddCallerSkip 解决行号失真.md>)
