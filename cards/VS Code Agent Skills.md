@@ -5,8 +5,6 @@ date: 2026-03-07T10:40:08+08:00
 
 # VS Code Agent Skills
 
-# Visual Studio Code Agent Skills
-
 ### 🧠 Agent Skills 是什么
 
 - **能力定义：** Agent Skills 是包含指令、脚本和资源的文件夹，GitHub Copilot 可以根据需要加载这些文件夹来执行特定任务。
