@@ -20,6 +20,8 @@
 
 ## 代码示例
 
+### 🧠 MySQL
+
 ```go
 package main
 
@@ -49,8 +51,37 @@ func initDB(dsn string) (*sql.DB, error) {
 }
 ```
 
+### 🧠 SQLite
+
+```go
+package main
+
+import (
+    "context"
+    "database/sql"
+    "time"
+
+    _ "github.com/mattn/go-sqlite3"
+)
+
+func initSQLite() (*sql.DB, error) {
+    db, err := sql.Open("sqlite3", "app.db")
+    if err != nil {
+        return nil, err
+    }
+
+    ctx, cancel := context.WithTimeout(context.Background(), 3*time.Second)
+    defer cancel()
+
+    if err := db.PingContext(ctx); err != nil {
+        db.Close()
+        return nil, err
+    }
+
+    return db, nil
+}
+```
+
 ## 注意事项
 
 1. **`sql.Open` 不会立刻建立连接：** `sql.Open` 只是准备好数据库连接池对象，并不代表已经成功连接数据库；建议使用 `Ping` 或 `PingContext` 验证连通性。
-
-2. **`*sql.DB` 应该全局复用：** `*sql.DB` 本质上是连接池，通常在应用启动时创建一次，并注入到 repo / dao 中贯穿整个程序生命周期复用，不要在每次请求中重复调用 `sql.Open`。
