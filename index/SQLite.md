@@ -45,6 +45,30 @@ DATETIME	实际是 TEXT
 
 ### 🧠 插入数据（INSERT）
 
+- 往指定列，塞对应值。
+
+- **SQLite 使用 `?` 占位符：**
+
+    - Go 里要写成：`db.Exec("INSERT INTO users(name, age) VALUES(?, ?)", "Alice", 25)`
+
+- **自增主键可以不写：** SQLite 会自动生成主键。
+
+- **`NULL` 不能加引号：** 
+
+    ```sql
+    NULL   ✅
+    'NULL' ❌（变字符串）
+    ```
+
+- **字符串必须加引号：**
+
+    ```sql
+    'Alice' ✅
+    Alice   ❌
+    ```
+
+#### 🧠 插入一行
+
 - **代码示例：**
 
     ```sql
@@ -52,9 +76,49 @@ DATETIME	实际是 TEXT
     VALUES ('Alice', 25);
     ```
 
-- **SQLite 使用 `?` 占位符：**
+#### 🧠 插入全部列（省略列名）
 
-    - Go 里要写成：`db.Exec("INSERT INTO users(name, age) VALUES(?, ?)", "Alice", 25)`
+- **代码示例：**
+
+    ```sql
+    INSERT INTO users
+    VALUES (1, 'Alice', 25);
+    ```
+
+#### 🧠 一次插入多行
+
+- **代码示例：**
+
+    ```sql
+    INSERT INTO users (name, age)
+    VALUES 
+    ('Alice', 25),
+    ('Bob', 30);
+    ```
+
+#### 🧠 插入或忽略冲突
+
+- **作用：** 避免唯一键冲突报错，直接跳过这条记录。
+
+- **代码示例：**
+
+    ```sql
+    INSERT OR IGNORE INTO users (name, age)
+    VALUES ('Alice', 25);
+    ```
+
+#### 🧠 插入或替换
+
+- **本质：** 先 `DELETE` 再 `INSERT`。
+
+- **注意：** 会影响外键、触发器。
+
+- **代码示例：**
+
+    ```sql
+    INSERT OR REPLACE INTO users (name, age)
+    VALUES ('Alice', 25);
+    ```
 
 ### 🧠 查询数据（SELECT）
 
