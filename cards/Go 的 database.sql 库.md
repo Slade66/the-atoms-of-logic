@@ -1,5 +1,5 @@
 ﻿
-### `database/sql` 是什么？
+### 🧠 `database/sql` 是什么？
 
 - `database/sql` 是 Go 标准库提供的对关系型数据库操作统一抽象层，负责对外暴露一致的数据库操作 API。database/sql 本身是一个接口，不是具体数据库驱动，它必须配合具体驱动使用。
 
@@ -17,20 +17,17 @@
 - `database/sql` = 通用 API（抽象层）
 - 驱动 = 具体实现（负责与数据库通信）
 
-### sql.Row：单行结果
+### 🧠 `sql.Row`：表示“只返回一行”的查询结果
 
-row 不需要关，QueryRow 内部其实也是用 rows，但它帮你做了这几件事：只取一行，自动关闭底层资源
+[[type Row struct](sql.Row.md)]
 
-### sql.Rows：多行结果集
+### 🧠 `sql.Rows`：表示多行的查询结果集
 
-rows 必须 `defer rows.Close()`，
-rows 背后占着：数据库连接，网络资源，结果集游标。忘记关闭 `Rows` 就会导致连接泄露：连接不会及时归还到连接池，连接池被耗尽，最后导致报错崩溃。
+[[type Rows struct](sql.Rows.md)]
 
-### sql.Result
+### 🧠 `sql.Result`：表示一次执行 SQL 语句后的结果摘要
 
-常用两个方法：
-LastInsertId()
-RowsAffected()
+[[type Result interface](sql.Result.md)]
 
 ### 事务... // todo
 
@@ -80,7 +77,10 @@ func Transfer(ctx context.Context, db *sql.DB, fromID, toID int64, amount int64)
 ```
 
 
-## 🧠 `sql.DB`：表示「一个操作数据库资源的凭证 + 复用多个数据库底层连接的连接池」
+
+## `sql.DB`
+
+### 🧠 `sql.DB`：表示「一个操作数据库资源的凭证 + 复用多个数据库底层连接的连接池」
 
 [[type DB struct](sql.DB.md)]
 
