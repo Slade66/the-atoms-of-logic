@@ -9,7 +9,7 @@ created: 2026-03-28T21:26:51+08:00
 - **运行 Spring Boot 项目：**
 
     ```bash
-    mvnw spring-boot:run
+    ./mvnw spring-boot:run
     ```
 
 - **解决了什么问题？**
