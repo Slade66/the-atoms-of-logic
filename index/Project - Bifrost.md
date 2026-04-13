@@ -76,3 +76,5 @@
 [VMware 虚拟机 IP 的识别机制](../atoms/2026-04-09-22-39-19.md)
 
 [VMware VDDK SDK 安装与验证](../atoms/2026-04-10-15-03-13.md)
+
+[VMware 快照机制：增量 Delta 链](../atoms/2026-04-13-10-21-01.md)
