@@ -27,3 +27,5 @@ created: 2026-04-09T14:53:07+08:00
 [LVM（Logical Volume Manager，逻辑卷管理器）](../atoms/2026-04-17-14-15-15.md)
 
 [怎么改 Linux 的密码？](../atoms/2026-04-17-15-43-49.md)
+
+[SCP（Secure Copy Protocol）](../atoms/2026-04-17-16-16-09.md)
