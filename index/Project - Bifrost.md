@@ -80,3 +80,7 @@
 [VMware 快照机制：增量 Delta 链](../atoms/2026-04-13-10-21-01.md)
 
 [VMware 快照删除：合并机制](../atoms/2026-04-13-10-47-10.md)
+
+[为什么不能将 VDDK SDK 放入 Git 仓库](../atoms/2026-04-14-22-34-18.md)
+
+[VMware ESXi HotAdd](../atoms/2026-04-17-09-26-52.md)
