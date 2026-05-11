@@ -20,3 +20,6 @@ created: 2026-03-23T17:50:01+08:00
 不会：
 打包 jar
 启动项目
+
+./mvnw clean package -DskipTests
+

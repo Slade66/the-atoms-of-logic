@@ -203,3 +203,20 @@ DATETIME	实际是 TEXT
     CREATE INDEX idx_users_name ON users(name);
     ```
 
+## 函数
+
+COALESCE 是 SQL 里的“取第一个非 NULL 值”的函数。
+
+COALESCE 只对 NULL 生效，不对“空字符串”生效
+也就是说：
+Title == nil -> 不更新
+Title != nil && *Title == "" -> 会更新成空字符串
+
+COALESCE(title, 'default title')
+含义是：
+如果 title 不是 NULL，就用 title
+如果 title 是 NULL，就用 'default title'
+
+它很适合做“部分更新”：传了新值，就更新成新值。传的是 NULL，就保留原字段不变
+COALESCE(a, b) 就是“a 有值用 a，没有就用 b”。
+
